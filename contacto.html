@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <img src="assets/images/logofuerte.png" class="logo" alt="logo">
+            <span id="span-header">¡Siempre es buen momento para realizar deporte!</span>
+            <nav id="nav">
+                <a href="index.html">Inicio</a>
+                <a href="biografia.html">Personal</a>
+                <a href="portafolio.html">Instalaciones</a>
+            </nav>
+            </nav>
+        </div>
+    </div>
+
+    <h3>Horarios y Registro</h3>
+
+    <div id="content-registro">
+        <div id="horarios-box">
+            <a href="http://www.futbolcity.es/futbolcity/wp-content/uploads/2019/05/horario-gym-2019.jpg"
+                title="horario" target="_blank">
+                <img src="assets/images/horario-gym.jpg" class="horario-gym"></a>
+
+        </div>
+        <div id="registro-box">
+            <form>
+                <fieldset>
+                    <legend class="legend-text">Tú</legend>
+
+                    <div class="opciones-form">
+                        <label for="Nombre" class="labels-formulario">Nombre</label>
+                        <input type="text" id="Nombre" placeholder="¿Cómo te llamas?" tabindex="-1" required>
+                    </div>
+
+                    <div class="opciones-form">
+                        <label for="direccion" class="labels-formulario">Dirección</label>
+                        <input type="text" id="direccion" placeholder="Pon tu dirección" tabindex="-1" required>
+                    </div>
+
+                    <div class="opciones-form">
+                        <label for="edad" class="labels-formulario">Fecha de nacimiento</label>
+                        <input type="date" id="edad" min="1960-01-01" max="2020-01-01" placeholder="Inserte edad"
+                            tabindex="-1" required>
+                    </div>
+
+                    <div class="opciones-form">
+                        <div class="sex-box">
+                            <label for="sexo" class="labels-formulario">Hombre</label>
+                            <input type="radio" id="sexo-hombre" name="sexo-sent" value="Hombre" tabindex="-1">
+                        </div>
+                        <div class="sex-box">
+                            <label for="sexo" class="labels-formulario">Mujer</label>
+                            <!--Revisar por que deja seleccionar las 2 opciones-->
+                            <input type="radio" id="sexo-mujer" name="sexo-sent" value="Mujer" tabindex="-1">
+                        </div>
+                    </div>
+
+                    <div class="opciones-form">
+                        <label for="talla" class="labels-formulario">Talla</label>
+                        <span>Para la camiseta</span>
+                        <input list="talla">
+                        <datalist id="talla">
+                            <option value="XS">
+                            <option value="S">
+                            <option value="M">
+                            <option value="L">
+                            <option value="XL">
+                            <option value="XXL">
+                        </datalist>
+                    </div>
+
+                    <br>
+
+                    <div class="opciones-form">
+                        <label for="Escribe algo sobre ti" class="labels-formulario">¿Qué esperas del gimnasio?</label>
+                        <textarea name="textarea" cols="40" rows="5" id="Escribe algo sobre ti"
+                            tabindex="-1"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="legend-text">Contacto</legend>
+
+                    <div class="opciones-form">
+                        <label for="correo" class="labels-formulario">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="No te olvides de poner @"
+                            tabindex="-1">
+                    </div>
+
+                    <div class="opciones-form">
+                        <label for="Numero teléfono" class="labels-formulario">Número de teléfono</label>
+                        <input type="tel" id="Numero teléfono" name="telefono"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" maxlength="9" placeholder="Inserte teléfono"
+                            tabindex="-1">
+                    </div>
+                </fieldset>
+
+                <div id="send-box">
+
+                    <input type="submit" class="button-1" value="Enviar"><input type="reset" class="button-2"
+                        value="Reiniciar">
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footy">
+        <div class="contact-us">
+            <span class="numero-tlf">Teléfono: 962845234</span><span class=email>E-mail: Ftinessclub@gym.com</span>
+        </div>
+
+        <div id="social-media">
+            <a href="http://www.facebook.com" title="facebook" target="_blank">
+                <img src="assets/images/fb-logo.png" class="social-logo" alt="facebook"></a>
+            <a href="http://instagram.com" title="instagram" target="_blank">
+                <img src="assets/images/insta-logo.png" class="social-logo" alt="instagram"></a>
+            <a href="http://www.twitter.com" title="twitter" target="_blank">
+                <img src="assets/images/twitter-logo.png" class="social-logo" alt="twitter"></a>
+            <a href="http://www.linkedin.com" title="linkedin" target="_blank">
+                <img src="assets/images/linke-logo.png" class="social-logo" alt="linkedin"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,674 @@
+@font-face {
+    font-family: "Dash";
+    src: url(assets/fonts/Dash-Horizon-Demo.otf);
+}
+
+@font-face {
+    font-family: "Coolvetica";
+    src: url(assets/fonts/coolvetica\ rg\ it.otf);
+}
+
+@font-face {
+    font-family: "Chopsic";
+    src: url(assets/fonts/Chopsic.otf);
+}
+
+@font-face {
+    font-family: "Royal";
+    src: url(assets/fonts/Royal_Knights-Demo.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@font-face {
+    font-family: "Solstice";
+    src: url(assets/fonts/THE\ SOLSTICE.ttf);
+}
+
+@font-face {
+    font-family: "Okine";
+    src: url(assets/fonts/MADEOkineSansPERSONALUSE-Regular.otf);
+}
+
+@font-face {
+    font-family: "Cyberion";
+    src: url(assets/fonts/Cyberion-Demo.otf);
+}
+
+/*Hasta aquí las fuentes que va a cargar la hoja de estilos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f0f0;
+    color: rgb(0, 0, 0);
+    width: auto;
+
+}
+
+a {
+    text-decoration: none;
+    color: #db3333;
+    text-shadow: 2px 2px 6px#090b0c;
+    font-family: "Cyberion";
+    text-align: center;
+    font-size: 15px;
+}
+
+#header {
+    display: flex;
+    background-image: url(assets/images/wallpaperflare-cropped\ \(1\).jpg);
+    max-height: 320px;
+    border-style: solid;
+}
+
+.logo {
+    padding-left: 10px;
+    order: 0;
+    flex: 0 1 auto; 
+    align-self: flex-start;
+    padding-top: 10px;
+}
+
+.logo-box {
+    display: flex;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav {
+    display: flex;
+    font-size: 19px;
+    font-weight: bold;
+    flex-direction: column;
+    cursor: pointer;
+    align-content: space-between;
+    gap: 15px;
+    padding-bottom: 100px;
+    padding-top: 15px;
+    padding-right: 5px;
+}
+
+#span-header {
+    color: rgb(221, 211, 211);
+    font-family: "Solstice";
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(5, 5, 5), 0 0 25px rgb(244, 244, 245), 0 0 5px rgb(18, 18, 19);
+    padding-top: 70px;
+    text-align: center;
+}
+
+#span-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footy {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(209, 202, 202);
+    border-style: solid;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    font-size: 18px;
+
+}
+
+.social-logo {
+    width: 30px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*Hasta aquí el encabezado y el footer de todas las páginas*/
+
+/*Aquí empieza el contenido del index.html el cual se divide en dos grandes divs: #content-index e index-images*/
+
+#content-index {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding-left: 190px;
+    padding-right: 190px;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+#content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4f0f1;
+    border-radius: 10px;
+    padding: 35px;
+    margin-bottom: 5%;
+    transition: 0.5s;
+    border-style: solid;
+    box-shadow: 10px 11px 21px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+h1 {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    font-size: 60px;
+    font-family: "Coolvetica";
+    text-decoration: underline;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Coolvetica";
+    font-size: 32px;
+}
+
+.span-home {
+    text-align: center;
+    color: #777;
+    font-size: 19px;
+}
+
+#index-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: end;
+    padding-top: 50px;
+    padding-left: 190px;
+    padding-right: 190px;
+    padding-bottom: 100px;
+    gap: 135px;
+}
+
+.index-img {
+    max-width: 580px;
+
+}
+
+.p-index-images {
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: "Chopsic";
+    text-shadow: 2px 2px 6px #777;
+    font-size: 28px;
+}
+
+.image-layer {
+    background: black;
+    width: 100%;
+    transition: 0.5s;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+}
+
+.image-layer:hover {
+    background: #777;
+    box-shadow: rgb(5, 5, 5);
+
+}
+
+/*Hasta aquí el index.html*/
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    font-family: "Dash";
+    text-shadow: 2px 2px 6px #777;
+}
+
+#content-biografia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 190px;
+    padding-right: 190px;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+#monitores {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    background-color: bisque;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-style: double;
+    box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+}
+
+.monitor-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+.info-monitores {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 200px;
+}
+
+span.text-monitores {
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 22px;
+}
+
+.job-monitores {
+    text-align: center;
+    font-size: 19px;
+    color: #777;
+}
+
+.monitor-img {
+    border-style: solid;
+}
+
+/*Hasta aquí la página de biografía*/
+
+/*Aquí empieza la página de portfolio*/
+
+#content-portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 190px;
+    gap: 20px;
+}
+
+.instalacion-img {
+    width: 410px;
+    border-style: solid;
+}
+
+#instalaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    background-color: rgb(216, 213, 165);
+    border-style: double;
+    padding: 90px 190px;
+    background-color: bisque;
+    box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+    width: 100%;
+    margin: 15px 15px;
+}
+
+.instal-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-style: solid;
+    background-color: rgb(100, 92, 92);
+    padding: 20px 25px;
+}
+
+span.explicacion-instalaciones {
+    color: #f0e3e3;
+    font-family: "Chopsic";
+    text-shadow: 2px 2px 6px#5db8cf;
+    text-align: center;
+    font-size: 22px;
+}
+
+.clases-videos {
+    font-size: 19px;
+}
+
+#clases {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clases-videos {
+    text-align: center;
+}
+
+/*Hasta aquí la página de portfolio*/
+
+/*Aquí empieza la página de contact*/
+
+.horario-gym {
+    width: 480px;
+}
+
+#content-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 50px 190px;
+}
+
+#horarios-box {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90px;
+}
+
+#registro-box {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 25px;
+    align-items: center;
+    background-color: rgb(255, 248, 248);
+}
+
+legend {
+    font-family: "Okine";
+    text-shadow: 1px 1px 6px bisque;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 25px;
+    background-color: bisque;
+    border-radius: 15px;
+    border-style: solid;
+    box-shadow: 15px 6px 51px -14px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 15px 6px 51px -14px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 15px 6px 51px -14px rgba(0, 0, 0, 0.66);
+}
+
+.labels-formulario {
+    font-family: "Okine";
+    text-shadow: 1px 1px 6px bisque;
+}
+
+#send-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.opciones-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 5% 0;
+    color: rgb(8, 8, 8);
+}
+
+::placeholder {
+    text-align: center;
+}
+
+
+.button-2 {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+/*Código copiado para el botton de enviar*/
+
+.button-1 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20, 167, 62, 1) 0%, rgba(102, 247, 113, 1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+.button-1:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+
+::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    .instalacion-img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    a {
+        text-decoration: none;
+        color: #db3333;
+        text-shadow: 2px 2px 6px#090b0c;
+        font-family: "Cyberion";
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .index-img {
+        max-width: 100px;
+
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .span-home {
+        font-size: 12px;
+    }
+
+    .monitor-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px 60px;
+        gap: 40px;
+
+    }
+
+    #span-header {
+        color: rgb(221, 211, 211);
+        font-family: "Solstice";
+        font-size: 12px;
+        text-shadow: 1px 1px 2px rgb(5, 5, 5), 0 0 25px rgb(244, 244, 245), 0 0 5px rgb(18, 18, 19);
+        padding-top: 70px;
+    }
+
+    .logo {
+        padding-left: 10px;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        width: 100px;
+    }
+
+    #nav {
+        display: flex;
+        font-size: 12px;
+        font-weight: bold;
+        flex-direction: column;
+        cursor: pointer;
+        align-content: space-between;
+        gap: 15px;
+        padding-bottom: 140px;
+    }
+
+    .horario-gym {
+        width: 20px;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        background-color: rgb(255, 248, 248);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 25px;
+        background-color: bisque;
+        border-radius: 15px;
+        border-style: solid;
+        box-shadow: 15px 6px 51px -14px rgba(0, 0, 0, 0.66);
+        -webkit-box-shadow: 15px 6px 51px -14px rgba(0, 0, 0, 0.66);
+        -moz-box-shadow: 15px 6px 51px -14px rgba(0, 0, 0, 0.66);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .opciones-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        color: rgb(8, 8, 8);
+        width: 100%;
+        height: 100%;
+    }
+
+    #instalaciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        background-color: rgb(216, 213, 165);
+        border-style: double;
+        padding: 90px 190px;
+        background-color: bisque;
+        box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+        -webkit-box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+        -moz-box-shadow: 19px 17px 51px -2px rgba(0, 0, 0, 0.66);
+
+    }
+
+    #clases {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px;
+        align-items: center;
+    }
+
+    .instal-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border-style: solid;
+        background-color: rgb(100, 92, 92);
+        padding: 20px 25px;
+        width: 300px;
+    }
+
+    .instalacion-img {
+        width: 230px;
+    }
+
+    iframe {
+        transform: scale(0.75, 0.75);
+    }
+
+    .opciones-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 5% 0;
+        color: rgb(8, 8, 8);
+    }
+}
+
